@@ -1,0 +1,2 @@
+rootProject.name = "Find Image Differences"
+include ':app'

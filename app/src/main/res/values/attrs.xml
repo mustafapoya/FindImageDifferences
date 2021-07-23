@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChannelCategoryView">
+        <attr name="category_image" format="reference"/>
+        <attr name="category_text" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="ChannelContentView">
+        <attr name="content_message" format="string"/>
+    </declare-styleable>
+    <attr name="background" format="reference"/>
+    <attr name="content_background" format="reference"/>
+    <attr name="bgColor" format="color"/>
+    <attr name="textColor" format="color"/>
+    <attr name="metaTextColor" format="color"/>
+    <attr name="tab_color" format="reference"/>
+</resources>

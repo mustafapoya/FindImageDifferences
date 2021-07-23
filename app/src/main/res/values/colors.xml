@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--White Theme Color-->
+    <color name="blue_200">#cdd7e0</color>
+    <color name="blue_500">#517da2</color>
+    <color name="blue_700">#426382</color>
+    <color name="green_200">#effedd</color>
+    <!--White Theme Color-->
+    <color name="black_200">#151e27</color>
+    <color name="black_500">#212d3b</color>
+    <color name="black_700">#1a242e</color>
+    <color name="blue_600">#3e6189</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#C1C1C1</color>
+
+</resources>

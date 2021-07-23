@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FindImageDifferences" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black_500</item>
+        <item name="colorPrimaryVariant">@color/black_500</item>
+        <item name="colorOnPrimary">@color/black_200</item>
+
+        <item name="textColor">@color/white</item>
+        <item name="metaTextColor">@color/gray</item>
+        <item name="backgroundColor">@color/black_500</item>
+        <item name="background">@drawable/custom_list_background_night</item>
+        <item name="content_background">@color/blue_700</item>
+        <item name="tab_color">@drawable/tab_color_night</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/blue_200</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="actionBarStyle">@style/Theme.Night.Action</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Night.Action" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/black_700</item>
+        <item name="titleTextStyle">@style/ActionBarTitleText</item>
+        <item name="subtitleTextStyle">@style/ActionBarSubTitleText</item>
+    </style>
+
+    <style name="ActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ActionBarSubTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

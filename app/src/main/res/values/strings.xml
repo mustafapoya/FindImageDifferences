@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Find Image Differences</string>
+    <string name="title_home">Home</string>
+    <string name="title_about">About</string>
+    <string name="connect_with_us">Connect with US</string>
+    <string name="version">Version 1.0</string>
+    <string name="help">Help</string>
+</resources>
