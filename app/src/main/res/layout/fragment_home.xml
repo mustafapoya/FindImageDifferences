@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- real_id="ca-app-pub-3540008829614888/8424710658" -->
     <!-- test_id="ca-app-pub-3940256099942544/6300978111" -->
@@ -17,19 +28,50 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:adUnitId="ca-app-pub-3540008829614888/8424710658"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="parent" />
+        ads:layout_constraintTop_toBottomOf="@id/progress_loading" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_image_orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vertical"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_select_image"
+        app:layout_constraintEnd_toStartOf="@+id/btn_select_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_select_image" />
+
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableEnd="@drawable/ic_photo_black_48dp"
+        android:drawableTint="@color/white"
+        android:text="@string/select_image"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/adViewHomeScreenBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switch_image_orientation" />
 
     <ScrollView
         android:id="@+id/scroll_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/btn_select_image"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adViewHomeScreenBanner">
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_image">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -45,18 +87,4 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-    <Button
-        android:id="@+id/btn_select_image"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:text="Select Image"
-        android:drawableEnd="@drawable/ic_photo_black_48dp"
-        android:drawableTint="@color/white"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

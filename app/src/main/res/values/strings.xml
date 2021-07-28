@@ -5,4 +5,13 @@
     <string name="connect_with_us">Connect with US</string>
     <string name="version">Version 1.0</string>
     <string name="help">Help</string>
+    <string name="help_text">
+        Find the difference game solver will help you to find the difference of two picture whether they are portrait or landscape.
+        First you need to take a screenshot from your game and then crop the surplus part of the image and
+        just make sure they are in equal size vertically or horizontally. Then App will process the Image and find the differences.
+    </string>
+    <string name="processing_image">Processing Image</string>
+    <string name="select_image">Select Image</string>
+    <string name="vertical">Vertical</string>
+    <string name="horizontal">Horizontal</string>
 </resources>

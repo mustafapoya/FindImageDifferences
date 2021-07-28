@@ -39,7 +39,7 @@ public class AboutFragment extends Fragment {
 
         View aboutPage = new AboutPage(context)
                 .isRTL(false)
-                .setDescription("")
+                .setDescription(context.getString(R.string.help_text))
                 .addItem(new Element().setTitle(context.getString(R.string.version)).setIconDrawable(R.drawable.ic_info_black_24))
                 .addGroup(context.getString(R.string.connect_with_us))
                 .addEmail("contact@golbarg.net")
